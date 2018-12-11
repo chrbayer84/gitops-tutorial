@@ -9,6 +9,9 @@ spec:
     metadata:
       labels:
         app: podinfo
+  annotations:
+      flux.weave.works/tag.dotnet-load-tester: glob:*
+      flux.weave.works/automated: 'true'
     spec:
       containers:
       - name: podinfo
